@@ -5,11 +5,19 @@
     font-family: Arial, sans-serif;
 }
 body {
-    background-color: #f4f4f4;
-    color: #333;
+    background: linear-gradient(to top, #000000, #00007a, #0000ff);
+    color: #fff;
     line-height: 1.6;
-    padding: 20px;
+    min-width: 100vh;
+    min-height: 100vh;
 }
+.minha-photo img {
+    width: 150px;
+    height: 150px;
+    background-color: #000;
+    border-radius: 10px;
+}
+
 header {
     background: #35424a;
     color: #ffffff;
@@ -21,6 +29,7 @@ header h1 {
 }
 nav {
     margin-top: 10px;
+    margin-left: 10px;
 }
 nav a {
     color: #ffffff;
@@ -29,10 +38,23 @@ nav a {
 }
 nav a:hover {
     text-decoration: underline;
+    color: #0000ff;
 }
-.container {
-    max-width: 1200px;
-    margin: auto;
-    overflow: hidden;
-    padding: 0 20px;
+footer {
+    background: #35424a;
+    color: #ffffff;
+    text-align: center;
+    padding: 10px 0;
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+}
+.social-link {
+    cursor: pointer;
+    margin: 10px;
+    width: 8px;
+    transition: transform 0.3s, margin-left 0.3s;}
+.social-link:hover {
+    transform: scale(1.2);
+    margin: 15px;
 }
